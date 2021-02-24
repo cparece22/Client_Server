@@ -10,9 +10,9 @@ A = 0
 motors = [0] ###If extra motors add pin # here
 
 def extend():
-  RPL.servoWrite(A,1600)
+  RPL.servoWrite(A,2000)
 def retract():
-  RPL.servoWrite(A,1400)
+  RPL.servoWrite(A,1000)
 def stop():
   for x in motors:
     RPL.servoWrite(x,0)
